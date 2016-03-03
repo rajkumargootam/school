@@ -12,5 +12,13 @@
     background-color: $primary-color;
     color: $light-color;
     font-weight: $thin-font-weight;
+    font-size: 5vmin;
+    padding: 0.5vmin 8vmin;
+    margin-top:2vmin;
+    transition: background-color 0.3s ease-in;
+
+    &:hover {
+      background-color: darken($primary-color, 5%);
+    }
   }
 }
