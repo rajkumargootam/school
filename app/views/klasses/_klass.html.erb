@@ -1,7 +1,6 @@
 <li>
   <%= klass.title %>
   (
-  <%= link_to("Edit", klasses_path, method: :patch, remote: true)  %>
-
+  <%= link_to("Edit", edit_klass_path(klass))  %>
   )
   </li>

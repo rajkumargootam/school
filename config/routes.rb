@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'klasses/index'
-
+  
   get 'home/land'
   resources :klasses
   resources :standards

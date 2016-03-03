@@ -10,6 +10,13 @@
 
 class KlassesController < ApplicationController
   def index
-    @all_classes = Klass.all
+    @al1_classes = Klass.all
+  end
+  def edit
+    @all_class = Klass.find(params[:id])
+  end
+  def update
+    @all_class = Klass.find(params[:id])
+    @all_class.update_attributes(:title, params[:title])
   end
 end
