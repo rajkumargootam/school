@@ -2,5 +2,6 @@
   <%= klass.title %>
   (
   <%= link_to("Edit", edit_klass_path(klass))  %>
+  <%= link_to("Delete", klass_path(klass), method: :delete, data: {confirm: "Are you sure you want to delete the Class?"})  %>
   )
   </li>
