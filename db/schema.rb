@@ -11,12 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160303191414) do
+ActiveRecord::Schema.define(version: 20160304111805) do
 
   create_table "klasses", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "sections", force: :cascade do |t|
+    t.integer  "klass_id"
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "sections", ["klass_id"], name: "index_sections_on_klass_id"
 
 end
