@@ -1,0 +1,8 @@
+<h>Add new student</h>
+<%= simple_form_for @all_students do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :rollno %>
+  <%= f.input :gender %>
+  <%= f.submit "Add Student", class: "btn btn-primary"%>
+<% end %>

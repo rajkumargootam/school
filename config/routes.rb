@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'students/index'
+
+  get 'students/index'
+
   get 'sections/index'
 
   get 'klasses/index'
@@ -6,6 +10,7 @@ Rails.application.routes.draw do
   get 'home/land'
   resources :klasses
   resources :sections
+  resources :students
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

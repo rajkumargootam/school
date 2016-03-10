@@ -48,4 +48,5 @@ group :development do
   gem 'annotate'
   gem 'guard'
   gem 'guard-livereload', require: false
+  gem 'faker'
 end
